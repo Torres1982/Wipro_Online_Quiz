@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Responsive Web Design </title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="counter.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="header-row" class="row">
+				<div id="section-one" class="col border border-primary rounded">
+					<h2>Online Quiz Simulator</h2>
+				</div>
+			</div>
+
+			<div id="subheader-row" class="row align-items-center">
+				<div id="section-two" class="col border border-primary rounded text-left">
+					Total Questions - 5
+				</div>
+				<div id="timer" class="col border border-primary rounded text-center">
+					00:00:00
+				</div>
+				<div id="section-four" class="col border border-primary rounded text-right">
+					Max Time - 5 Minutes
+				</div>
+			</div>
+
+			<div id="questions-section">
+				<div id="instruction-header">
+					You have 5 multiple choice questions to answer:
+				</div>
+				<ul>
+					<li>Total time for the quiz to take is 5 minutes.</li>
+					<li>Only one answer is correct.</li>
+					<li>If you answer the question, please click the 'Next Question' button.</li>
+					<li>If you answer all the questions, please submit you quiz to see results.</li>
+				</ul>
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col text-center">
+				<input type="button" class="btn btn-danger" name="counter-button" id="counter-button" value="Start Quiz" onclick="startQuiz()"; />
+			</div>
+			<div class="col text-center">
+				<input type="button" class="btn btn-success" name="reult-button" id="result-button" value="Check Result" onclick="checkResult()"; />
+			</div>
+			<div class="col text-center">
+				<input type="button" class="btn btn-primary" name="next-button" id="next-button" value="Next Question" onclick="nextQuestion()"; disabled="disabled" />
+			</div>
+		</div>
+		<div class="col text-center">
+			<input type="button" class="btn btn-primary" name="reset-button" id="reset-button" value="Retake Quiz" onclick="retakeQuiz()"; />
+		</div>
+	</body>
+</html>

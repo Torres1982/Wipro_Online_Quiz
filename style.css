@@ -1,0 +1,62 @@
+h2 {
+	color: red!important;
+	padding-top: 10px!important;
+	text-align: center;
+}
+
+#section-two,
+#timer,
+#section-four {
+	font-weight: 500;
+}
+
+#timer {
+	background-color: lightgrey;
+}
+
+#header-row {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+#subheader-row {
+	margin-bottom: 20px;
+}
+
+.questions {
+	margin-bottom: 10px;
+}
+
+#instruction-header {
+	margin-bottom: 10px;
+}
+
+/************************ BUTTONS **************************/
+#counter-button,
+#next-button,
+#result-button,
+#reset-button {
+	width: 150px;
+	margin-bottom: 5px;
+}
+
+#result-button,
+#reset-button {
+	display: none;
+}
+
+/********************** Inner HTML **************************/
+#quiz_result_failed,
+#quiz_result_passed {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#quiz_result_failed {
+	color: red;
+}
+
+#quiz_result_passed {
+	color: green;
+}
